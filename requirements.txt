@@ -1,0 +1,8 @@
+asyncpg==0.29.0
+fastapi==0.115.5
+pydantic==2.10.2
+pytest==7.4.3
+Requests==2.32.3
+SQLAlchemy==2.0.23
+sse_starlette==1.6.5
+uvicorn==0.32.1
