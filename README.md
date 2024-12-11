@@ -30,11 +30,13 @@ This example project got a pretty big refactor with a lot of help from AI. I've 
    ```bash
    - Python 3.7+
    - PostgreSQL 9.5+
+   # OR
+   - Docker
    ```
 
 2. **Quick Setup**:
    ```bash
-   # Install dependencies
+   # Option 1: Local Setup
    pip install -r requirements.txt
 
    # Set up your database
@@ -45,12 +47,20 @@ This example project got a pretty big refactor with a lot of help from AI. I've 
        content TEXT NOT NULL,
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
+
+   # Option 2: Docker Setup
+   docker compose up
    ```
 
 3. **Run It**:
    ```bash
+   # For local setup
    python main.py
-   # Visit http://localhost:8000 and watch the real-time magic happen!
+
+   # For Docker
+   # Already running if you used docker compose up
+   
+   # Visit http://localhost:8000 to see it in action!
    ```
 
 ## How It Works
