@@ -20,6 +20,10 @@ Why SSE instead of WebSocket? Sometimes simpler is better! SSE provides a lightw
 - **Modern Stack**: FastAPI for async operations, PostgreSQL for reliable data storage
 - **Efficient Communication**: Server-Sent Events for lightweight real-time updates
 
+## ⚠️ Heads up!
+
+This example project got a pretty big refactor with a lot of help from AI. I've broke everything up into smaller, modular pieces to make things easier to manage and read. The core functionality is still the same. So If something does not work, just check out the first commit to see how it was before or hit me up if you need help!
+
 ## Try It Yourself
 
 1. **Prerequisites**:
@@ -61,6 +65,12 @@ Why SSE instead of WebSocket? Sometimes simpler is better! SSE provides a lightw
    - FastAPI for modern async Python
    - PostgreSQL's built-in pub/sub
    - Server-Sent Events for real-time updates
+
+## 🛠️ Technical Deep Dive
+
+I've written a detailed blog post explaining how PostgreSQL's NOTIFY/LISTEN mechanism works with Server-Sent Events to create a reactive system. The post covers the abstract concepts of the implementation details, and the reasoning behind some technical decisions, focusing on the backend:
+
+📝 [How to make PostgreSQL Reactive with Server-sent Events(SSE)? (Backend)](https://blog.v0id.me/how-to-make-postgresql-reactive/)
 
 ## 🎯 Key Takeaway
 
