@@ -2,7 +2,12 @@ asyncpg==0.29.0
 fastapi==0.115.5
 pydantic==2.10.2
 pytest==7.4.3
-Requests==2.32.3
+requests==2.32.3
 SQLAlchemy==2.0.23
-sse_starlette==1.6.5
+sse-starlette==1.6.5
 uvicorn==0.32.1
+python-multipart==0.0.6
+email-validator==2.1.0.post1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+psycopg2-binary==2.9.9

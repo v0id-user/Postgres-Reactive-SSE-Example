@@ -1,0 +1,18 @@
+[project]
+name = "postgresql-reactive"
+version = "0.1.0"
+description = "A FastAPI application with PostgreSQL reactive updates"
+requires-python = ">=3.9"
+
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "sqlalchemy>=2.0.23",
+    "asyncpg>=0.29.0",
+    "sse-starlette>=1.8.2",
+    "pydantic>=2.5.2"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

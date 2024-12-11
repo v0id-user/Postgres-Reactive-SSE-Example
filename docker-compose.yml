@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - POSTGRESQL_URL=postgresql://root:root@db:5432/dum_db
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+
+  db:
+    image: postgres:16-alpine
+    ports:
+      - "5433:5432"  # Changed to port 5433 on host
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=dum_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
