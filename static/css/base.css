@@ -1,0 +1,45 @@
+:root {
+    --color-blue: #007BFF;
+    --color-orange: #FF7A00;
+    --color-pink: #FFC2D1;
+    --color-mint: #B4E197;
+    --color-offwhite: #FAF9F6;
+    --color-gray: #E5E5E5;
+    --color-black: #1A1A1A;
+    --color-purple: #6A0DAD;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-offwhite);
+    color: var(--color-black);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Minimal geometric patterns */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent 95%, var(--color-pink) 95%),
+        linear-gradient(180deg, transparent 95%, var(--color-mint) 95%);
+    background-size: 50px 50px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}

@@ -1,0 +1,56 @@
+.page-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-black);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 8px;
+    background: var(--color-orange);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-purple);
+}
+
+.newsletter-date {
+    color: var(--color-purple);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
