@@ -80,7 +80,7 @@ This example project got a pretty big refactor with a lot of help from AI. I've 
 
 I've written a detailed blog post explaining how PostgreSQL's NOTIFY/LISTEN mechanism works with Server-Sent Events to create a reactive system. The post covers the abstract concepts of the implementation details, and the reasoning behind some technical decisions, focusing on the backend:
 
-📝 [How to make PostgreSQL Reactive with Server-sent Events(SSE)? (Backend)](https://blog.v0id.me/how-to-make-postgresql-reactive/)
+📝 ~~[How to make PostgreSQL Reactive with Server-sent Events(SSE)? (Backend)](https://blog.v0id.me/how-to-make-postgresql-reactive/)~~ The write got removed from ghost.org do to an issue with payment fees. Working on restoring it soon.
 
 ## 🎯 Key Takeaway
 
