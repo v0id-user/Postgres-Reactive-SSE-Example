@@ -5,7 +5,11 @@
 A real-time newsletter application showcasing PostgreSQL's NOTIFY/LISTEN feature for reactive updates, inspired by modern databases like Convex.
 
 <img src="preview.png" alt="Neo-brutalism Design">
+<div align="center">
 
+[![MADE BY #V0ID](https://img.shields.io/badge/MADE%20BY%20%23V0ID-F3EEE1.svg?style=for-the-badge)](https://github.com/v0id-user)
+
+</div>
 </div>
 
 ## 💡 The Idea
